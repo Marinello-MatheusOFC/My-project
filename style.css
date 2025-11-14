@@ -398,12 +398,12 @@ h3:hover {
   }
 
   #carouselExampleIndicators {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
   }
 
   .carousel-item {
-    height: 500px;
+    height: 400px;
   }
 
   .paicont {
@@ -423,4 +423,58 @@ h3:hover {
     padding: 12px;
     opacity: 1;
   }
+}
+
+/* ================================
+      CELULARES GRANDES (IPHONE 14 PRO MAX / 15 PRO MAX)
+   ================================= */
+@media (max-width: 430px) {
+  h1 { font-size: 36px; }
+  .texto1 { width: 90%; font-size: 18px; padding: 18px; }
+  .carousel-item { height: 450px; }
+  main { height: auto; }
+}
+
+/* ================================
+      IPHONES MÉDIOS (14, 13, 12, 11, XR)
+      largura típica: 390px / 414px
+   ================================= */
+@media (max-width: 414px) {
+  h1 { font-size: 34px; }
+  .titulo { margin-bottom: 10px; }
+  .pai { flex-direction: column; height: auto; }
+  .texto1 { width: 90%; font-size: 17px; }
+  #carouselExampleIndicators { max-width: 95%; }
+  .carousel-item { height: 430px; }
+  .card1 { opacity: 1; width: 90%; }
+}
+
+@media (max-width: 390px) {
+  h1 { font-size: 32px; }
+  .texto1 { font-size: 16px; }
+  .carousel-item { height: 400px; }
+}
+
+/* ================================
+      MOTOROLA / ANDROID PADRÃO
+      largura típica: 360px
+      Moto E22, E32, G22, G32, G52, G9, G10, etc.
+   ================================= */
+@media (max-width: 360px) {
+  h1 { font-size: 28px; }
+  .texto1 { width: 90%; font-size: 15px; padding: 12px; }
+  .carousel-item { height: 350px; }
+  .card1 { width: 90%; padding: 12px; }
+  main { height: auto; }
+}
+
+/* ================================
+      CELULARES MENORES (IPHONE SE, ANDROID PEQUENO)
+      320px
+   ================================= */
+@media (max-width: 320px) {
+  h1 { font-size: 24px; }
+  .texto1 { font-size: 14px; padding: 10px; }
+  .carousel-item { height: 300px; }
+  .musica { padding: 8px 14px; }
 }
